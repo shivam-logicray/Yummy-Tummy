@@ -12,6 +12,7 @@ import { Timestamp, doc, getDoc, setDoc } from "firebase/firestore";
 import { db } from "../Firebase/config";
 import { useSelector } from "react-redux";
 import { selectUrl } from "../Redux/cartSlice";
+import loginimage from '../component/loginImage.jpg'
 let initialState = { email: "", password: "" };
 
 const Login = () => {
@@ -114,7 +115,7 @@ const Login = () => {
         <div className="row  shadow">
           <div className="col-md-4">
             <img
-              src={require("../component/loginImage.jpg")}
+              src={loginimage}
               style={{ width: "300px", height: "440px" }}
             />
           </div>

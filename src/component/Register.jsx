@@ -5,6 +5,7 @@ import { auth, db } from "../Firebase/config";
 import Loader from "./Loader";
 import { toast } from "react-toastify";
 import { Timestamp, doc, setDoc } from "firebase/firestore";
+import registerimage from './rlogo.jpeg'
 let initialState = {
   username: "",
   email: "",
@@ -83,7 +84,7 @@ const Register = () => {
       <div className="row border shadow">
         <div className="col-md-4">
           <img
-            src={require("./rlogo.jpeg")}
+            src={registerimage}
             style={{ width: "300px", height: "440px" }}
           />
         </div>
